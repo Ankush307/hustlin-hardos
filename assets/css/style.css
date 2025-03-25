@@ -19,3 +19,7 @@
     --leading-111: 111%;
     --leading-140: 140%;
 }
+
+body {
+    background-image: url('/assets/images/png/dotted-layer.png');
+}
