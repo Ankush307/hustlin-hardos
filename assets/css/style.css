@@ -8,6 +8,10 @@ body {
     background-image: url('/assets/images/png/dotted-layer.png');
 }
 
+.slider-bg {
+    background-image: url(../images/png/team-slider-bg.png);
+}
+
 button {
     cursor: pointer;
 }
