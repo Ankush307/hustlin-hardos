@@ -7,3 +7,7 @@
 body {
     background-image: url('/assets/images/png/dotted-layer.png');
 }
+
+button {
+    cursor: pointer;
+}
