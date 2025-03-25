@@ -1,21 +1,9 @@
-@theme {
-    --color-red: #FF0000;
-    --color-yellow: #FFD600;
-    --color-orange: #FF1300;
-    --color-brown: #70675F;
-    --color-green: #00A106;
-    --color-gray: #A59A90;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Noto Serif", serif;
 }
 
-@theme {
-    --text-custom-8xl: 157px;
-    --text-custom-7xl: 80px;
-    --text-custom-6xl: 72px;
-}
-
-@theme {
-    --leading-100: 100%;
-    --leading-104: 104%;
-    --leading-111: 111%;
-    --leading-140: 140%;
+body {
+    background-image: url('/assets/images/png/dotted-layer.png');
 }
