@@ -147,3 +147,6 @@ incrementButton.addEventListener("click", () => {
     value += 1;
     valueDisplay.textContent = value;
 });
+// year
+const currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = currentYear;
