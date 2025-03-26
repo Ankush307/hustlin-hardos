@@ -8,11 +8,13 @@ $('.tweet-slider').slick({
     autoplaySpeed: 4000,
     prevArrow: '.right-arrow',
     nextArrow: '.left-arrow',
+    enterMode: true,
+    centerPadding: '40px',
     responsive: [
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 2.7,
                 slidesToScroll: 2,
             }
         },
