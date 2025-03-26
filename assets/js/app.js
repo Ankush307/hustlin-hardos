@@ -1,6 +1,5 @@
 const handelClick = () => {
     document.body.classList.toggle("overflow-hidden");
-    document.getElementById("menu").classList.toggle("max-sm:!left-0");
     document.getElementById("menu").classList.toggle("max-sm:!top-0");
     document.getElementById("nav-line-1").classList.toggle("translate-x-10");
     document.getElementById("nav-line-2").classList.toggle("after:rotate-90");
@@ -46,57 +45,47 @@ function toggleAccordion(button) {
 
     allIcons.forEach((otherIcon) => {
         if (otherIcon !== icon) {
-            otherIcon.classList.add("after:opacity-100");
+            otherIcon.classList.add("after:rotate-90");
         }
     });
 
     if (paragraph.style.maxHeight) {
-        paragraph.style.maxHeight = null;
-        icon.classList.add("after:opacity-100");
+        paragraph.style.maxHeight = null
+        icon.classList.add("after:rotate-90");
     } else {
         paragraph.style.maxHeight = paragraph.scrollHeight + "px";
-        icon.classList.remove("after:opacity-100");
+        icon.classList.remove("after:rotate-90");
     }
 }
 
-
-
-$('.tweet-slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: '.left-arrow',
-    nextArrow: '.right-arrow',
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".latest-next",
+        prevEl: ".latest-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
         },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+    },
 });
+
 $('.team-slider').slick({
     dots: false,
     infinite: true,
