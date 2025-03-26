@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: moderfb;
+    src: url(/assets/fonts/modernofbcomp-bold.otf);
+}
+
 * {
     font-family: "Noto Serif", serif;
+}
+
+.moderfb {
+    font-family: moderfb;
 }
 
 body {
@@ -14,4 +23,7 @@ body {
 
 button {
     cursor: pointer;
+}
+.justify-left{
+    justify-content: left;
 }
