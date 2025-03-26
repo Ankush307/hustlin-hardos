@@ -15,6 +15,7 @@
             --color-brown: #70675F;
             --color-green: #00A106;
             --color-gray: #A59A90;
+            --color-cream: #F8F2E4;
         }
 
         @theme {
@@ -37,42 +38,71 @@
     <!-- hero section -->
     <section class="max-w-[1920px] mx-auto">
         <div class="bg-black h-[52px]"></div>
-        <header class="flex flex-col">
-            <div class="mx-auto max-w-[1140px] w-full max-xl:px-4">
-                <div class="lg:gap-[178px] flex items-center pt-2 pb-[15px] justify-between lg:justify-end">
-                    <p class="md:text-2xl text-xl">Hustlin' Hardos</p>
-                    <div class="flex gap-5 items-center justify-center">
-                        <div class="flex items-center justify-center gap-[18px] max-md:hidden">
-                            <a href="/"><img src="/assets/images/svg/discord-logo.svg" alt="discord logo"></a>
-                            <a href="/"><img src="/assets/images/svg/twitter-logo.svg" alt="twitter logo"></a>
-                            <a href="/"><img src="/assets/images/svg/instagram-logo.svg" alt="instagram logo"></a>
-                            <a href="/"><img src="/assets/images/svg/m-logo.svg" alt="m logo"></a>
-                            <a href="/"><img src="/assets/images/svg/ship-logo.svg" alt="ship logo"></a>
+        <header class="py-2">
+            <div class="container max-xl:px-4 max-w-[1140px] w-full mx-auto">
+                <div class="flex w-full justify-end items-center">
+                    <div class="max-w-[658px] w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <a href="/">Hustlin' Hardos</a>
+                            <div id="menu"
+                                class="flex gap-5 transition-all max-sm:z-40 duration-300 items-center max-sm:gap-4 max-sm:fixed max-sm:flex-col max-sm:w-full max-sm:h-full max-sm:justify-center max-sm:items-center max-sm:bg-cream max-sm:top-0 max-sm:left-full">
+                                <div class="flex gap-[18px] max-sm:flex-col max-sm:gap-4 items-center">
+                                    <a target="_blank" href="https://www.discord.com/"
+                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/discord-logo.svg" alt="discord" />
+                                    </a>
+                                    <a target="_blank" href="https://www.twitter.com/"
+                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/twitter-logo.svg" alt="discord" />
+                                    </a>
+                                    <a target="_blank" href="https://www.instagram.com/"
+                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/instagram-logo.svg" alt="discord" />
+                                    </a>
+                                    <a target="_blank" href="https://www.discord.com/"
+                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/m-logo.svg" alt="discord" />
+                                    </a>
+                                    <a target="_blank" href="https://www.twitter.com/"
+                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/ship-logo.svg" alt="discord" />
+                                    </a>
+                                </div>
+                                <button
+                                    class="py-3 px-4 duration-300 cursor-pointer font-semibold border-2 border-black bg-yellow text-black hover:bg-black hover:text-yellow">
+                                    Connect Wallet
+                                </button>
+                            </div>
+                            <button onclick="handelClick()"
+                                class="sm:hidden relative z-50 overflow-hidden h-6 py-0.5 w-7 flex justify-between flex-col">
+                                <span id="nav-line-1"
+                                    class="flex w-7 bg-black h-1 transition-all duration-300 rounded-md"></span>
+                                <span id="nav-line-2"
+                                    class="flex w-7 bg-black h-1 transition-all duration-300 rounded-md relative after:absolute after:w-full after:rounded-md after:h-full after:left-0 after:top-0 after:bg-black after:transition-all after:duration-300"></span>
+                                <span id="nav-line-3"
+                                    class="flex w-7 bg-black h-1 transition-all duration-300 rounded-md"></span>
+                            </button>
                         </div>
-                        <button
-                            class="text-sm font-semibold hover:bg-black hover:text-yellow duration-300 leading-100 px-4 py-3 bg-yellow border-2 border-black uppercase">Connect
-                            Wallet</button>
                     </div>
                 </div>
             </div>
-            <div class="border-y-2 flex items-center justify-center">
-                <div class="flex items-center md:justify-center max-xl:px-4 overflow-scroll md:overflow-hidden ">
-                    <a href="#about-us"
-                        class="px-6 leading-100 uppercase h-[38px] items-center justify-center flex border-r border-l-2 whitespace-nowrap">About
-                        us</a>
-                    <a href="#minting"
-                        class="px-6 leading-100 uppercase h-[38px] items-center justify-center flex border-x ">Minting</a>
-                    <a href="#roadmap"
-                        class="px-6 leading-100 uppercase h-[38px] items-center justify-center flex border-x ">Roadmap</a>
-                    <a href="#team"
-                        class="px-6 leading-100 uppercase h-[38px] items-center justify-center flex border-x ">Team</a>
-                    <a href="#faqs"
-                        class="px-6 leading-100 uppercase h-[38px] items-center justify-center flex border-l border-r-2 ">FAQs</a>
+            <div class="w-full mt-[7px] border-t-2 border-b-2">
+                <div class="max-w-[561px] justify-center items-center flex mx-auto">
+                    <a class="px-6 border-x-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
+                        href="#about">About us</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
+                        href="#about">Minting</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
+                        href="#about">Roadmap</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
+                        href="#about">Team</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
+                        href="#about">FAQs</a>
                 </div>
             </div>
         </header>
-        <div class="container mx-auto max-w-[1140px] pt-[25px]">
-            <h1 class="lg:text-[90px] md:text-6xl text-5xl  font-bold text-center">THE HUSTLIN’ HARDOS.</h1>
+        <div class="container mx-auto pt-[25px]">
+            <h1 class="lg:text-custom-8xl md:text-6xl text-5xl font-bold text-center moderfb">THE HUSTLIN’ HARDOS.</h1>
         </div>
         <img class="max-md:h-[300px] w-full" src="/assets/images/webp/hero-img.webp" alt="hero img"
             style="object-fit: cover;">
@@ -80,33 +110,36 @@
 
     <!-- minting section -->
     <section id="minting" class="pb-[88px]">
-        <div class="container max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-12 max-xl:px-4">
+        <div class="container max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-8 max-xl:px-4">
             <h3 class="lg:text-custom-6xl md:text-5xl text-4xl leading-104 ">Minting</h3>
         </div>
         <div class="border-y-2">
             <div class="max-w-[1140px] mx-auto flex flex-wrap max-xl:px-4">
-                <div class="lg:w-1/2 w-full px-[25px] py-[45px]  border-x-2">
-                    <p class="lg:max-w-[438px] leading-[120%] ">Most of the Hustlin’ Hardos first experienced NFTs via
+                <div class="lg:w-1/2 w-full p-5 md:px-[25px] md:py-[45px]  border-x-2">
+                    <p class="lg:max-w-[438px] leading-[120%] max-md:text-sm">Most of the Hustlin’ Hardos first
+                        experienced NFTs via
                         other
                         successful projects like NBA TopShot, where revealing your newly minted item invoked the same
                         emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those
                         feelings once again while also empowering communities through shared ownership. The space has
                         seen incredible growth over the past year, and it is our belief that we are in the very early
                         innings of the paradigm shift that will be powered by web3.</p>
-                    <div class="max-lg:flex-row max-md:flex-col flex flex-col pt-[15px] gap-[35px]">
-                        <div class="h-[49px] border-2 flex items-center justify-center max-w-[238px]">
-                            <button class="px-6 text-4xl font-semibold subtract-btn ">-</button>
-                            <p
-                                class="w-[109px] total-value border-x-2 flex items-center justify-center text-4xl font-semibold h-full">
-                                0</p>
-                            <button class="px-6 text-4xl font-semibold plus-btn">+</button>
+                    <div class="max-lg:flex-row flex flex-col pt-[15px] max-md:justify-between md:gap-[35px]">
+                        <div class="h-[49px] border-2 flex items-center justify-center max-w-[150px] md:max-w-[238px]">
+                            <button id="reduce-button"
+                                class="md:px-6 px-3 text-xl md:text-4xl font-semibold subtract-btn ">-</button>
+                            <p id="output"
+                                class="w-[109px] total-value border-x-2 flex items-center justify-center text-2xl md:text-4xl font-semibold h-full">
+                                100</p>
+                            <button id="increase-button"
+                                class="md:px-6 px-3 text-xl md:text-4xl font-semibold plus-btn">+</button>
                         </div>
                         <button
                             class="text-sm max-w-[120px] font-semibold hover:bg-black hover:text-yellow mint-btn duration-300 leading-100 px-4 py-3 bg-yellow border-2 border-black uppercase">Mint
                             NOW</button>
                     </div>
-                    <p class="text-green text-lg font-semibold leading-100 pt-9">Time Left</p>
-                    <p class="text-4xl font-semibold leading-100 text-red counter">00:00:00</p>
+                    <p class="text-green md:text-lg font-semibold leading-100 pt-6 md:pt-9">Time Left</p>
+                    <p class="md:text-4xl text-3xl font-semibold leading-100 text-red counter">00:00:00</p>
                 </div>
                 <div class="lg:w-1/2 w-full border-x-2 lg:border-r-2 max-lg:border-t-2">
                     <img class="w-full max-h-[575px]" src="assets/images/webp/sad-men-img.webp" alt="men img">
@@ -114,22 +147,46 @@
             </div>
         </div>
         <div class="border-b-2">
-            <div class="max-w-[832px] flex flex-wrap max-xl:px-4 gap-5 mx-auto py-[21px] items-center justify-between">
+            <div
+                class="max-w-[832px] max-md:hidden flex flex-wrap max-xl:px-4 gap-10 md:gap-5 mx-auto md:py-[21px] items-center justify-between">
                 <div class="flex flex-col gap-3">
-                    <p class="text-2xl leading-111 ">Etiam eget</p>
-                    <p class="text-4xl font-semibold leading-111">42</p>
+                    <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Etiam eget</p>
+                    <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <p class="text-2xl leading-111 ">Tristique.</p>
-                    <p class="text-4xl font-semibold leading-111">42</p>
+                    <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Tristique.</p>
+                    <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <p class="text-2xl leading-111 ">Aliquet ac.</p>
-                    <p class="text-4xl font-semibold leading-111">42</p>
+                    <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Aliquet ac.</p>
+                    <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <p class="text-2xl leading-111 ">Tincidunt.</p>
-                    <p class="text-4xl font-semibold leading-111">42</p>
+                    <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Tincidunt.</p>
+                    <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
+                </div>
+            </div>
+            <div
+                class="max-w-[832px] md:hidden flex flex-wrap max-xl:px-4 md:gap-5 mx-auto md:py-[21px] items-center justify-between">
+                <div class="w-full flex ">
+                    <div class="flex flex-col gap-3 w-1/2 border border-t-0 border-l-2 py-6 px-3">
+                        <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Etiam eget</p>
+                        <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
+                    </div>
+                    <div class="w-1/2 border border-r-2 py-6 px-3 border-t-0 flex flex-col gap-3">
+                        <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Tristique.</p>
+                        <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
+                    </div>
+                </div>
+                <div class="w-full flex">
+                    <div class="flex flex-col gap-3 w-1/2 border border-b-0 border-l-2 py-6 px-3">
+                        <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Aliquet ac.</p>
+                        <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
+                    </div>
+                    <div class="w-1/2 border border-r-2 py-6 px-3 border-b-0 flex flex-col gap-3">
+                        <p class="lg:text-2xl md:text-xl text-lg leading-111 ">Tincidunt.</p>
+                        <p class="lg:text-4xl md:text-3xl text-2xl font-semibold leading-111">42</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,8 +198,8 @@
                 <h3 class="lg:text-custom-6xl md:text-5xl text-4xl leading-104">RoadMap</h3>
             </div>
         </div>
-        <div class="max-w-[1140px] mx-auto max-xl:px-4 "> 
-            <div class="border-x-2 pb-[88px]  md:pt-[128px] pt-20">
+        <div class="max-w-[1140px] mx-auto max-xl:px-4 ">
+            <div class="border-x-2 md:pb-[88px]  md:pt-[128px] pt-20">
                 <div class="flex flex-col grid-cols-9 pl-9 mx-auto md:grid">
                     <div class="flex md:contents">
                         <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
@@ -158,40 +215,35 @@
                         </div>
                         <div class="relative max-[1140px]:mb-6 border-solid rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 1</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl pb-3">Community Building</h3>
-                            <p>The concept of Hustlin’ Hardos was born a few short weeks ago and we’re currently focused
-                                on
-                                the most important aspect of the project - COMMUNITY. We are organizing giveaways and
-                                events
-                                to spread the word around what will be one of the most exciting NFT projects so far. We
-                                also
-                                aim to reward those driving early engagement for the project in the form of white-list
-                                and
-                                pre-sale access to the official Hustlin’ Hardo drop. Join us on our Discord channel to
-                                see
-                                what we are all about!</p>
+                            <h3 class="md:text-lg font-semibold lg:text-4xl pb-3">Community Building</h3>
+                            <p class="max-sm:text-sm">The concept of Hustlin’ Hardos was born a few short weeks ago and
+                                we’re currently focused
+                                on the most important aspect of the project - COMMUNITY. We are organizing giveaways and
+                                events to spread the word around what will be one of the most exciting NFT projects so
+                                far. We also aim to reward those driving early engagement for the project in the form of
+                                white-list and pre-sale access to the official Hustlin’ Hardo drop. Join us on our
+                                Discord channel to see what we are all about!</p>
                         </div>
                     </div>
-                    <div class="flex md:contents flex-row-reverse">
+                    <div class="flex md:contents flex-row-reverse justify-left">
                         <div
                             class="relative md:-mt-28 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5  md:ml-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 2</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Community Building</h3>
-                            <p class="max-w-[460px]">Hustlin’ Hardos can be minted and are revealed to the world. There
-                                will
-                                only ever be 9,999 Hustlin’ Hardos, so this is your chance to get your hands on this
-                                unique
-                                collectible item, which will become an integral part of your online identity</p>
+                            <h3 class="md:text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Community Building</h3>
+                            <p class="max-w-[460px] max-md:text-sm">Hustlin’ Hardos can be minted and are revealed to
+                                the world. There
+                                will only ever be 9,999 Hustlin’ Hardos, so this is your chance to get your hands on
+                                this unique collectible item, which will become an integral part of your online identity
+                            </p>
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-28">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
-                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full bg-gradient-to-b">
+                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                                 </div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
-                                <div class="relative">
-                                    <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
+                                <div class="relative"><img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
                                         class="top-[5%] absolute" />
                                 </div>
                             </div>
@@ -203,45 +255,39 @@
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] md:-mt-3 rounded-full top-[0%]">
-                                <div class="relative">
-                                    <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
+                                <div class="relative"><img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
                                         class="top-[0%] absolute" />
                                 </div>
                             </div>
                         </div>
                         <div class="relative max-[1140px]:mb-6 border-solid rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 3</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl pb-3">Real-life Raffles</h3>
-                            <p>We will be raffling real-life versions of some of the luxury items worn by Hustlin’
-                                Hardos.
-                                For example, one week after the minting event is sold out, we will raffle a Rolex GMT
-                                “Batman” among the lucky holders of Hustlin' Hardos wearing that specific watch - so be
-                                on
-                                the lookout for characters who hold items you would like to own. Each month, we will
-                                announce another similar raffle, where Hustlin’ Hardos will get the chance to win items
-                                worn
-                                by their favorite NFTs </p>
+                            <h3 class="md:text-lg font-semibold lg:text-4xl pb-3">Real-life Raffles</h3>
+                            <p class="max-sm:text-sm">We will be raffling real-life versions of some of the luxury items
+                                worn by Hustlin’
+                                Hardos. For example, one week after the minting event is sold out, we will raffle a
+                                Rolex GMT “Batman” among the lucky holders of Hustlin' Hardos wearing that specific
+                                watch - so be on the lookout for characters who hold items you would like to own. Each
+                                month, we will announce another similar raffle, where Hustlin’ Hardos will get the
+                                chance to win items worn by their favorite NFTs </p>
                         </div>
                     </div>
-                    <div class="flex md:contents flex-row-reverse">
+                    <div class="flex md:contents flex-row-reverse justify-left">
                         <div
                             class="relative md:-mt-24 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5  md:ml-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 4</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl leading-[120%] pb-3">No-Loss Gambling</h3>
-                            <p class="max-w-[460px]">Each week, we will organize free to enter no-loss gambling, with
-                                25% of
-                                royalties being distributed as prize pool in events such as marble races or
-                                blackjack/poker
-                                tournaments. Imagine being able to bet on your Hustlin’ Hardo in a virtual foot race
-                                against
-                                your friend’s hardos. Since those events are free to enter, you can’t lose anything -
-                                but
-                                you can win BIG!</p>
+                            <h3 class="md:text-lg font-semibold lg:text-4xl leading-[120%] pb-3">No-Loss Gambling</h3>
+                            <p class="max-w-[460px] max-md:text-sm">Each week, we will organize free to enter no-loss
+                                gambling, with
+                                25% of royalties being distributed as prize pool in events such as marble races or
+                                blackjack/poker tournaments. Imagine being able to bet on your Hustlin’ Hardo in a
+                                virtual foot race against your friend’s hardos. Since those events are free to enter,
+                                you can’t lose anything - but you can win BIG!</p>
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-24">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
-                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full bg-gradient-to-b">
+                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                                 </div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
@@ -266,8 +312,9 @@
                         </div>
                         <div class="relative max-[1140px]:mb-6 border-solid rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 5</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl pb-3">Hustlin’ Hardettes</h3>
-                            <p>The ethos of Hustlin’ Hardos is to create an authentic and inclusive community where we
+                            <h3 class="md:text-lg font-semibold lg:text-4xl pb-3">Hustlin’ Hardettes</h3>
+                            <p class="max-sm:text-sm">The ethos of Hustlin’ Hardos is to create an authentic and
+                                inclusive community where we
                                 would
                                 celebrate the quirky nature of the finance world. With that objective in mind, we will
                                 also
@@ -276,13 +323,14 @@
                                 community.</p>
                         </div>
                     </div>
-                    <div class="flex md:contents flex-row-reverse">
+                    <div class="flex md:contents flex-row-reverse justify-left">
                         <div
                             class="relative md:-mt-3 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5  md:ml-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 6</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Metaverse Integrations
+                            <h3 class="md:text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Metaverse Integrations
                             </h3>
-                            <p class="max-w-[460px]">Both our personal and professional lives are increasingly moving
+                            <p class="max-w-[460px] max-md:text-sm">Both our personal and professional lives are
+                                increasingly moving
                                 online. Your Huslin’ Hardo will become your gateway to this new reality, acting as your
                                 3D
                                 avatar in the metaverse</p>
@@ -290,7 +338,7 @@
                         <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
-                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full bg-gradient-to-b">
+                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                                 </div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
@@ -315,27 +363,29 @@
                         </div>
                         <div class="relative max-[1140px]:mb-6 border-solid rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 7</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl pb-3">Future Developments</h3>
-                            <p>It wouldn’t make sense to build one of the best online communities and not actively
+                            <h3 class="md:text-lg font-semibold lg:text-4xl pb-3">Future Developments</h3>
+                            <p class="max-sm:text-sm">It wouldn’t make sense to build one of the best online communities
+                                and not actively
                                 listen to
                                 its suggestions. As such, we also plan to execute against some community-generated
                                 ideas,
                                 delivering against the priorities of those who made Hustlin’ Hardos a success</p>
                         </div>
                     </div>
-                    <div class="flex md:contents flex-row-reverse">
+                    <div class="flex md:contents flex-row-reverse justify-left">
                         <div
                             class="relative md:-mt-3 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5  md:ml-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 8</p>
-                            <h3 class="text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Swapping Individual
+                            <h3 class="md:text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Swapping Individual
                                 Attributes
                             </h3>
-                            <p class="max-w-[460px]">Building a wardrobe app where you can secondary sales</p>
+                            <p class="max-w-[460px] max-md:text-sm">Building a wardrobe app where you can secondary
+                                sales</p>
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
-                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full bg-gradient-to-b">
+                                    class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                                 </div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
@@ -347,15 +397,24 @@
                         </div>
                     </div>
                     <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
-                        <div class="flex items-center justify-center w-0.5 h-full">
-                            <div
-                                class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full bg-gradient-to-b">
+                        <div class="flex items-center justify-center w-0.5 h-36">
+                            <div class="w-1 translate-y-[20px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                             </div>
                         </div>
-                        <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
-                            <div class="relative">
-                                <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                    class="top-[5%] absolute" />
+                    </div>
+                    <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
+                        <div
+                            class="flex items-center justify-center w-0.5 h-5 md:rotate-45 origin-bottom max-md:translate-y-[-10px] rotate-[45deg]">
+                            <div
+                                class="w-1 md:translate-y-[6px]  translate-x-[-1px] md:translate-x-[15px] h-full bg-black rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
+                        <div
+                            class="flex items-center justify-center max-md:translate-y-[-35px] w-0.5 h-5 md:-rotate-45 rotate-[-45deg]">
+                            <div
+                                class="w-1 md:translate-y-[1px] translate-x-[-10px] md:translate-x-[-9px] h-full bg-black rounded-full">
                             </div>
                         </div>
                     </div>
@@ -363,126 +422,179 @@
             </div>
     </section>
     <!-- FAQS SECTION -->
-    <section class="py-16 max-md:py-11 lg:mt-7 max-sm:py-7">
-        <div class="max-w-[1140px] mx-auto max-xl:px-4 pb-[88px]">
-            <h3 class="lg:text-custom-6xl md:text-5xl text-4xl leading-104">Faqs</h3>
+    <section id="faq">
+        <div class="w-full">
+            <div class="max-w-[1140px] max-xl:px-4 mx-auto container">
+                <div
+                    class="max-w-[1140px] max-xl:px-4 py-[89.5px] max-lg:py-20 max-md:py-14 max-sm:py-10 mx-auto container">
+                    <h2 class="text-custom-7xl max-lg:text-7xl max-md:text-6xl max-sm:text-4xl uppercase leading-104">
+                        Faqs</h2>
+                </div>
+            </div>
         </div>
         <div class="border-y-2">
-            <div class="max-w-[1140px] mx-auto max-xl:px-4 border-x-2">
-                <div class="rounded-lg py-6 space-y-4 max-w-961 mx-auto">
-                    <div class="accordion-item border-y-2 min-h-[108px] overflow-hidden border-black"
-                        data-active="true">
+            <div class="max-w-[1140px] max-xl:px-4 mx-auto container">
+                <div class="border-x-2">
+                    <div class="w-full">
+                        <!-- items 1 -->
                         <div
-                            class="accordion-btn relative z-10 min-h-[108px] cursor-pointer flex justify-between p-7 items-center">
-                            <p class="text-2xl">What is an NFT?</p>
-                            <img src="./assets/images/svg/plus.svg" alt="arrow"
-                                class="transform transition-transform duration-300">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer font-semibold items-center text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>What is an NFT?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
                         </div>
-                        <p
-                            class="accordion-text -mt-56 transition-all duration-300 text-base font-normal px-4 py-2 max-w-[992px]">
-                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                            blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental
-                            function is to be digital art. But they can also offer additional benefits like exclusive
-                            access to websites, event tickets, game items, and ownership records for physical objects.
-                            Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
-                            Hardos works like this
-                        </p>
-                    </div>
-                    <div class="accordion-item border-y-2 min-h-[108px] overflow-hidden border-black"
-                        data-active="false">
+
+                        <!-- items 2 -->
                         <div
-                            class="accordion-btn relative z-10 min-h-[108px] cursor-pointer flex justify-between p-7 items-center">
-                            <p class="text-2xl">How much is a Hustlin' Hardo NFT?</p>
-                            <img src="./assets/images/svg/plus.svg" alt="arrow"
-                                class="transform transition-transform duration-300">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>How do I get an NFT?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
                         </div>
-                        <p
-                            class="accordion-text -mt-56 transition-all duration-300 text-base font-normal px-4 py-2 max-w-[992px]">
-                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                            blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental
-                            function is to be digital art. But they can also offer additional benefits like exclusive
-                            access to websites, event tickets, game items, and ownership records for physical objects.
-                            Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
-                            Hardos works like this
-                        </p>
-                    </div>
-                    <div class="accordion-item border-y-2 min-h-[108px] overflow-hidden border-black"
-                        data-active="false">
+
+                        <!-- items 3 -->
                         <div
-                            class="accordion-btn relative z-10 min-h-[108px] cursor-pointer flex justify-between p-7 items-center">
-                            <p class="text-2xl">Where can I mint a Hustlin' Hardos NFT?</p>
-                            <img src="./assets/images/svg/plus.svg" alt="arrow"
-                                class="transform transition-transform duration-300">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>How much is a Hustlin' Hardo NFT?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
                         </div>
-                        <p
-                            class="accordion-text -mt-56 transition-all duration-300 text-base font-normal px-4 py-2 max-w-[992px]">
-                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                            blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental
-                            function is to be digital art. But they can also offer additional benefits like exclusive
-                            access to websites, event tickets, game items, and ownership records for physical objects.
-                            Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
-                            Hardos works like this
-                        </p>
-                    </div>
-                    <div class="accordion-item border-y-2 min-h-[108px] overflow-hidden border-black"
-                        data-active="false">
+
+                        <!-- items 4 -->
                         <div
-                            class="accordion-btn relative z-10 min-h-[108px] cursor-pointer flex justify-between p-7 items-center">
-                            <p class="text-2xl">How do I mint a Hustlin' Hardo NFT?</p>
-                            <img src="./assets/images/svg/plus.svg" alt="arrow"
-                                class="transform transition-transform duration-300">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>Where can I mint a Hustlin' Hardos NFT?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
                         </div>
-                        <p
-                            class="accordion-text -mt-56 transition-all duration-300 text-base font-normal px-4 py-2 max-w-[992px]">
-                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                            blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental
-                            function is to be digital art. But they can also offer additional benefits like exclusive
-                            access to websites, event tickets, game items, and ownership records for physical objects.
-                            Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
-                            Hardos works like this
-                        </p>
-                    </div>
-                    <div class="accordion-item border-y-2 min-h-[108px] overflow-hidden border-black"
-                        data-active="false">
+
+                        <!-- items 5 -->
                         <div
-                            class="accordion-btn relative z-10 min-h-[108px] cursor-pointer flex justify-between p-7 items-center">
-                            <p class="text-2xl">How many Hustlin' Hardos NFTs will there be?</p>
-                            <img src="./assets/images/svg/plus.svg" alt="arrow"
-                                class="transform transition-transform duration-300">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>How do I mint a Hustlin' Hardo NFT?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
                         </div>
-                        <p
-                            class="accordion-text -mt-56 transition-all duration-300 text-base font-normal px-4 py-2 max-w-[992px]">
-                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                            blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental
-                            function is to be digital art. But they can also offer additional benefits like exclusive
-                            access to websites, event tickets, game items, and ownership records for physical objects.
-                            Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
-                            Hardos works like this
-                        </p>
-                    </div>
-                    <div class="accordion-item border-y-2 min-h-[108px] overflow-hidden border-black"
-                        data-active="false">
+
+                        <!-- items 6 -->
                         <div
-                            class="accordion-btn relative z-10 min-h-[108px] cursor-pointer flex justify-between p-7 items-center">
-                            <p class="text-2xl">What is the utility and functionality of a Hustlin' Hardo NFT?</p>
-                            <img src="./assets/images/svg/plus.svg" alt="arrow"
-                                class="transform transition-transform duration-300">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>How many Hustlin' Hardos NFTs will there be?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
                         </div>
-                        <p
-                            class="accordion-text -mt-56 transition-all duration-300 text-base font-normal px-4 py-2 max-w-[992px]">
-                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                            blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental
-                            function is to be digital art. But they can also offer additional benefits like exclusive
-                            access to websites, event tickets, game items, and ownership records for physical objects.
-                            Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
-                            Hardos works like this
-                        </p>
+
+                        <!-- items 7 -->
+                        <div
+                            class="pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            <button onclick="toggleAccordion(this)"
+                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                <span>What is the utility and functionality of a Hustlin' Hardo
+                                    NFT?</span>
+                                <span
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                            </button>
+                            <p
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                NFT stands for “Non-fungible token,” which means that it’s a
+                                unique, digital item with blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function
+                                is to be digital art. But they can also offer additional
+                                benefits like exclusive access to websites, event tickets, game
+                                items, and ownership records for physical objects. Think of it
+                                as a unique piece of art that can also work as a “members-only”
+                                card. Hustlin' Hardos works like this
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <script src="./assets/js/app.js"></script>
 </body>
 

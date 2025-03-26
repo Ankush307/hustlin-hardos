@@ -1,26 +1,13 @@
-// add and subtract button
-const totalValue = document.querySelector('.total-value');
-const subtractBtn = document.querySelector('.subtract-btn');
-const plusBtn = document.querySelector('.plus-btn');
-const mintBtn = document.querySelector('.mint-btn');
-let count = 0;
-subtractBtn.addEventListener('click', () => {
-    count--;
-    totalValue.textContent = count;
-    if (count < 0) { count = 0; totalValue.textContent = count; }
-});
-plusBtn.addEventListener('click', () => {
-    count++;
-    totalValue.textContent = count;
-});
-mintBtn.addEventListener('click', () => {
-    if (count > 0) {
-        alert('Minting successful');
-        count = 0;
-        totalValue.textContent = count;
-    }
+const handelClick = () => {
+    document.body.classList.toggle("overflow-hidden");
+    document.getElementById("menu").classList.toggle("max-sm:!left-0");
+    document.getElementById("menu").classList.toggle("max-sm:!top-0");
+    document.getElementById("nav-line-1").classList.toggle("translate-x-10");
+    document.getElementById("nav-line-2").classList.toggle("after:rotate-90");
+    document.getElementById("nav-line-2").classList.toggle("rotate-45");
+    document.getElementById("nav-line-3").classList.toggle("-translate-x-10");
+};
 
-});
 // count down
 const counter = document.querySelector('.counter');
 const countDownDate = new Date("May 4, 2025, 3:12:10").getTime();
@@ -31,7 +18,7 @@ const x = setInterval(() => {
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    counter.textContent = days + ":" + hours + ":" + minutes + ":" + seconds + ":";
+    counter.textContent = days + ":" + hours + ":" + minutes + ":" + seconds;
     if (distance < 0) {
         clearInterval(x);
         counter.textContent = "00:00:00:00";
@@ -42,30 +29,37 @@ document.querySelectorAll('.accordion-item').forEach(item => {
     accBtn.addEventListener('click', () => toggleAccordion(item));
 });
 
-function toggleAccordion(activeItem) {
-    const accordionItems = document.querySelectorAll('.accordion-item');
+function toggleAccordion(button) {
+    const allAccordions = document.querySelectorAll(".accordin-data");
+    const allIcons = document.querySelectorAll(
+        ".accordin-button span:last-child"
+    );
 
-    accordionItems.forEach(item => {
-        const content = item.querySelector('.accordion-text');
-        const arrow = item.querySelector('img');
+    const paragraph = button.nextElementSibling;
+    const icon = button.querySelector("span:last-child");
 
-        if (item === activeItem) {
-            item.classList.toggle('active');
-            content.classList.toggle('-mt-56');
-         
-            arrow.classList.toggle('rotate-180');
-            arrow.src = item.classList.contains('active') 
-                ? './assets/images/svg/open-acc.svg' 
-                : './assets/images/svg/plus.svg';
-        } else {
-            item.classList.remove('active');
-            content.classList.add('-mt-56');
-           
-            arrow.classList.remove('rotate-180');
-            arrow.src = './assets/images/svg/plus.svg';
+    allAccordions.forEach((otherParagraph) => {
+        if (otherParagraph !== paragraph) {
+            otherParagraph.style.maxHeight = null;
         }
     });
+
+    allIcons.forEach((otherIcon) => {
+        if (otherIcon !== icon) {
+            otherIcon.classList.add("after:opacity-100");
+        }
+    });
+
+    if (paragraph.style.maxHeight) {
+        paragraph.style.maxHeight = null;
+        icon.classList.add("after:opacity-100");
+    } else {
+        paragraph.style.maxHeight = paragraph.scrollHeight + "px";
+        icon.classList.remove("after:opacity-100");
+    }
 }
+
+
 
 $('.tweet-slider').slick({
     dots: false,
@@ -103,4 +97,53 @@ $('.tweet-slider').slick({
         }
     ]
 });
-// accordian
+$('.team-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    prevArrow: '.team-left-arrow',
+    nextArrow: '.team-right-arrow',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+// add and subtract button
+const decrementButton = document.getElementById("reduce-button");
+const incrementButton = document.getElementById("increase-button");
+const valueDisplay = document.getElementById("output");
+
+let value = 100;
+decrementButton.addEventListener("click", () => {
+    value -= 1;
+    valueDisplay.textContent = value;
+});
+incrementButton.addEventListener("click", () => {
+    value += 1;
+    valueDisplay.textContent = value;
+});
