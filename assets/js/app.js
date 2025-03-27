@@ -1,3 +1,4 @@
+// header menu
 const handelClick = () => {
     document.body.classList.toggle("overflow-hidden");
     document.getElementById("menu").classList.toggle("max-sm:!top-0");
@@ -6,7 +7,8 @@ const handelClick = () => {
     document.getElementById("nav-line-2").classList.toggle("rotate-45");
     document.getElementById("nav-line-3").classList.toggle("-translate-x-10");
 };
-// handle close is use for close menu
+
+// handle close
 const handelClose = () => {
     document.body.classList.remove("overflow-hidden");
     document.getElementById("menu").classList.remove("max-sm:!top-0");
@@ -37,24 +39,22 @@ document.querySelectorAll('.accordion-item').forEach(item => {
     accBtn.addEventListener('click', () => toggleAccordion(item));
 });
 
+// faq
 function toggleAccordion(button) {
     const allAccordions = document.querySelectorAll(".accordin-data");
     const allIcons = document.querySelectorAll(".accordin-button span:last-child");
     const paragraph = button.nextElementSibling;
     const icon = button.querySelector("span:last-child");
-
     allAccordions.forEach((otherParagraph) => {
         if (otherParagraph !== paragraph) {
             otherParagraph.style.maxHeight = null;
         }
     });
-
     allIcons.forEach((otherIcon) => {
         if (otherIcon !== icon) {
             otherIcon.classList.add("after:rotate-90");
         }
     });
-
     if (paragraph.style.maxHeight) {
         paragraph.style.maxHeight = null
         icon.classList.add("after:rotate-90");
@@ -64,6 +64,7 @@ function toggleAccordion(button) {
     }
 }
 
+// swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 0,
@@ -92,6 +93,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+// team slider
 $('.team-slider').slick({
     dots: false,
     infinite: true,
@@ -107,19 +109,17 @@ $('.team-slider').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
             }
         },
         {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
             }
         }
     ]
 });
+
 // add and subtract button
 const decrementButton = document.getElementById("reduce-button");
 const incrementButton = document.getElementById("increase-button");
@@ -134,6 +134,7 @@ incrementButton.addEventListener("click", () => {
     value += 1;
     valueDisplay.textContent = value;
 });
-// year
+
+// copy right year
 const currentYear = new Date().getFullYear();
 document.getElementById("year").textContent = currentYear;

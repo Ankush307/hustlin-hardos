@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hustlin Hardos</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="/assets/images/png/favicon.png" type="image/x-icon">
+
+    <!-- metatag -->
     <meta name="title" content="Hustlin Hardos" />
     <meta name="description"
         content="“BREAKING NEWS: Hustlin Hardos set to launch the most anticipated NFT project of 2022" />
@@ -23,6 +27,7 @@
         content="“BREAKING NEWS: Hustlin Hardos set to launch the most anticipated NFT project of 2022" />
     <meta property="twitter:image" content="/meta-image.png" />
 
+    <!-- slick slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,6 +35,8 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <style type="text/tailwindcss">
         @theme {
@@ -40,12 +47,13 @@
             --color-green: #00A106;
             --color-gray: #A59A90;
             --color-cream: #F8F2E4;
+            --color-sky-blue: #55ACEE;
         }
 
         @theme {
-            --text-custom-8xl: 157px;
-            --text-custom-7xl: 80px;
             --text-custom-6xl: 72px;
+            --text-custom-7xl: 80px;
+            --text-custom-8xl: 157px;
         }
 
         @theme {
@@ -59,9 +67,10 @@
 </head>
 
 <body>
-    <section class="bg-black py-[13.5px] max-md:py-2.5 max-sm:py-2">
+    <!-- top bar -->
+    <section class="bg-black py-[13.5px] max-md:py-2.5 max-sm:py-2 max-w-[1920px] mx-auto">
         <div class="flex overflow-hidden">
-            <div class="top-scroll flex gap-[62px] max-md:gap-14">
+            <div class="top-bar flex gap-[62px] max-md:gap-14">
                 <div class="flex items-center gap-[7px]">
                     <p class="text-white whitespace-nowrap">S&P</p>
                     <p class="text-red border p-0.5 text-sm rounded-[5px] border-solid border-red"> -1.01%</p>
@@ -130,6 +139,7 @@
             </div>
         </div>
     </section>
+
     <!-- hero section -->
     <section class="max-w-[1920px] mx-auto">
         <header class="py-2">
@@ -139,7 +149,7 @@
                         <div class="w-full flex items-center justify-between">
                             <a class="ff-moderfb text-2xl leading-100 font-normal" href="/">Hustlin' Hardos</a>
                             <div id="menu"
-                                class="flex gap-5 transition-all max-sm:z-40 duration-300 items-center max-sm:gap-4 max-sm:fixed max-sm:flex-col max-sm:w-full max-sm:h-1/2 max-sm:justify-center max-sm:items-center max-sm:bg-cream max-sm:left-0 max-sm:-top-full">
+                                class="flex gap-5 transition-all max-sm:z-40 duration-300 items-center max-sm:gap-4 max-sm:fixed max-sm:flex-col max-sm:w-full max-sm:h-full max-sm:justify-center max-sm:items-center max-sm:bg-cream max-sm:left-0 max-sm:-top-full">
                                 <div
                                     class="max-w-[561px] justify-center items-center flex-col flex mx-auto sm:hidden border-x-2">
                                     <a onclick="handelClose()"
@@ -160,28 +170,28 @@
                                 </div>
                                 <div class="flex gap-[18px] max-sm:gap-4 items-center">
                                     <a target="_blank" href="https://www.discord.com/"
-                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        class="flex size-6 justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
                                         <img src="./assets/images/svg/discord-logo.svg" alt="discord" />
                                     </a>
                                     <a target="_blank" href="https://www.twitter.com/"
-                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
-                                        <img src="./assets/images/svg/twitter-logo.svg" alt="discord" />
+                                        class="flex size-6 justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/twitter-logo.svg" alt="twitter" />
                                     </a>
                                     <a target="_blank" href="https://www.instagram.com/"
-                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
-                                        <img src="./assets/images/svg/instagram-logo.svg" alt="discord" />
+                                        class="flex size-6 justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/instagram-logo.svg" alt="instagram" />
                                     </a>
                                     <a target="_blank" href="https://medium.com/"
-                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
-                                        <img src="./assets/images/svg/m-logo.svg" alt="discord" />
+                                        class="flex size-6 justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/m-logo.svg" alt="m logo" />
                                     </a>
                                     <a target="_blank" href="https://opensea.io/"
-                                        class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
-                                        <img src="./assets/images/svg/ship-logo.svg" alt="discord" />
+                                        class="flex size-6 justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
+                                        <img src="./assets/images/svg/ship-logo.svg" alt="ship" />
                                     </a>
                                 </div>
                                 <button
-                                    class="py-3 px-4 duration-300 cursor-pointer font-semibold border-2 border-black bg-yellow text-black hover:bg-black hover:text-yellow">
+                                    class="py-2.5 px-3.5 duration-300 uppercase text-sm cursor-pointer font-semibold border-2 border-black bg-yellow text-black hover:bg-black hover:text-yellow">
                                     Connect Wallet
                                 </button>
                             </div>
@@ -213,13 +223,14 @@
                 </div>
             </div>
         </header>
-        <div class="container mx-auto pt-[25px]">
+        <div class="container mx-auto py-4 sm:pt-[25px]">
             <h1 class="xl:text-custom-8xl lg:text-9xl md:text-6xl text-5xl font-bold text-center ff-moderfb">THE
                 HUSTLIN’ HARDOS.</h1>
         </div>
         <img class="max-md:h-[300px] w-full object-cover pointer-events-none" src="/assets/images/webp/hero-img.webp"
             alt="hero img">
     </section>
+
     <!-----blue-cartoon-section-------->
     <section class="border-y-2">
         <div class="max-xl:px-4 border-b-2">
@@ -244,17 +255,18 @@
                             the most rewarding and engaging online communities
                         </p>
                         <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
+                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-sky-blue transition-all">Read
                             More...</a>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 flex justify-center">
-                    <img class="w-full max-h-[572px] lg:min-h-[572px] max-lg:border-t-2"
+                    <img class="w-full max-h-[572px] lg:min-h-[572px] max-lg:border-t-2 object-cover"
                         src="./assets/images/webp/blue-outfit-cartoon-img.webp" alt="blue-outfit-cartoon-img">
                 </div>
             </div>
         </div>
     </section>
+
     <!-----section-tweets-slider------->
     <section id="about">
         <div class="max-w-[1140px] max-xl:px-4 py-[89.5px] max-lg:py-20 max-md:py-14 max-sm:py-10 mx-auto">
@@ -279,7 +291,7 @@
                 <div class="swiper mySwiper border-l-2">
                     <div class="swiper-wrapper">
                         <div
-                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            class="swiper-slide px-5 h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
                             <h4 class="font-semibold text-3xl md:text-4xl leading-111">Etiam eget</h4>
                             <div class="flex gap-[11px] py-3 items-center">
                                 <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
@@ -289,10 +301,11 @@
                                 Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum
                                 porta ultrices quam in.
                             </p>
-                            <a href="/" class="underline text-sm">Read More...</a>
+                            <a href="/" class="underline hover:text-sky-blue transition-all duration-300 text-sm">Read
+                                More...</a>
                         </div>
                         <div
-                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            class="swiper-slide px-5 h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
                             <h4 class="font-semibold text-3xl md:text-4xl leading-111">Venenatis.</h4>
                             <div class="flex gap-[11px] py-3 items-center">
                                 <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
@@ -302,10 +315,11 @@
                                 Tortor dolor ultrices mauris aliquam feugiat amet ultrices
                                 facilisi. Venenatis.
                             </p>
-                            <a href="/" class="underline text-sm">Read More...</a>
+                            <a href="/" class="underline hover:text-sky-blue transition-all duration-300 text-sm">Read
+                                More...</a>
                         </div>
                         <div
-                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            class="swiper-slide px-5 h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
                             <h4 class="font-semibold text-3xl md:text-4xl leading-111">
                                 Quis vulputate.
                             </h4>
@@ -317,10 +331,11 @@
                                 Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor.
                                 Et tortor vel arcu ac.
                             </p>
-                            <a href="/" class="underline text-sm">Read More...</a>
+                            <a href="/" class="underline hover:text-sky-blue transition-all duration-300 text-sm">Read
+                                More...</a>
                         </div>
                         <div
-                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            class="swiper-slide px-5 h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
                             <h4 class="font-semibold text-3xl md:text-4xl leading-111">Venenatis.</h4>
                             <div class="flex gap-[11px] py-3 items-center">
                                 <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
@@ -330,10 +345,11 @@
                                 Tortor dolor ultrices mauris aliquam feugiat amet ultrices
                                 facilisi. Venenatis.
                             </p>
-                            <a href="/" class="underline text-sm">Read More...</a>
+                            <a href="/" class="underline hover:text-sky-blue transition-all duration-300 text-sm">Read
+                                More...</a>
                         </div>
                         <div
-                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            class="swiper-slide px-5 h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
                             <h4 class="font-semibold text-3xl md:text-4xl leading-111">
                                 Quis vulputate.
                             </h4>
@@ -345,13 +361,15 @@
                                 Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor.
                                 Et tortor vel arcu ac.
                             </p>
-                            <a href="/" class="underline text-sm">Read More...</a>
+                            <a href="/" class="underline hover:text-sky-blue transition-all duration-300 text-sm">Read
+                                More...</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- minting section -->
     <section id="minting">
         <div class="max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-10 max-xl:px-4">
@@ -383,7 +401,7 @@
                     <p class="text-green md:text-lg font-semibold leading-100 pt-6 md:pt-9">Time Left</p>
                     <p class="md:text-4xl text-3xl font-semibold leading-100 text-red counter">00:00:00</p>
                 </div>
-                <div class="lg:w-1/2 w-full border-x-2 lg:border-r-2 max-lg:border-t-2">
+                <div class="lg:w-1/2 w-full border-x-2 lg:border-r-2 max-lg:border-t-2 object-cover">
                     <img class="w-full max-h-[575px]" src="assets/images/webp/sad-men-img.webp" alt="men img">
                 </div>
             </div>
@@ -433,7 +451,8 @@
             </div>
         </div>
     </section>
-    <!-- Road Map -->
+
+    <!-- road map -->
     <section id="roadmap" class="relative border-b-2">
         <div class="border-b-2">
             <div class="max-w-[1140px] mx-auto max-xl:px-4 lg:py-[88px] md:py-16 py-10">
@@ -441,10 +460,10 @@
             </div>
         </div>
         <div class="max-w-[1140px] mx-auto max-xl:px-4 ">
-            <div class="border-x-2 py-12 md:py-16 lg:py-[100px] pt-20">
-                <div class="flex flex-col grid-cols-9 md:pl-9 pl-6 lg:pl-0 pr-1 mx-auto md:grid">
+            <div class="border-x-2 py-12 md:py-16 lg:py-[100px]">
+                <div class="flex flex-col grid-cols-9 md:px-9 px-6 pr-1 mx-auto md:grid">
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
@@ -478,7 +497,7 @@
                                 this unique collectible item, which will become an integral part of your online identity
                             </p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-28">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto md:-mt-28">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -492,7 +511,7 @@
                         </div>
                     </div>
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
@@ -526,7 +545,7 @@
                                 virtual foot race against your friend’s hardos. Since those events are free to enter,
                                 you can’t lose anything - but you can win BIG!</p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-24">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto md:-mt-24">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -541,7 +560,7 @@
                         </div>
                     </div>
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
@@ -577,7 +596,7 @@
                                 3D
                                 avatar in the metaverse</p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto md:-mt-3">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -592,7 +611,7 @@
                         </div>
                     </div>
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
@@ -624,7 +643,7 @@
                             <p class="max-w-[460px] max-md:text-sm">Building a wardrobe app where you can secondary
                                 sales</p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto md:-mt-3">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -634,23 +653,26 @@
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
                                         class="max-md:size-10 max-md:left-2.5 top-[5%] absolute" />
+                                    <img class="md:translate-x-[15px] md:translate-y-[148px] translate-x-[20px] translate-y-[115px] max-sm:size-5 lg:hidden"
+                                        src="./assets/images/svg/road-down-icon.svg" alt="road-down-icon">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
-                        <div class="flex items-center justify-center w-0.5 h-36">
+                    <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto md:-mt-3 max-lg:hidden">
+                        <div class="flex items-center justify-center w-0.5 h-24">
                             <div class="w-1 translate-y-[20px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                             </div>
                         </div>
                     </div>
-                    <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
+                    <div class="relative col-start-5 col-end-6 mr-7 md:mr-[70px] md:mx-auto md:-mt-3 max-lg:hidden">
                         <img class="md:translate-x-[13.5px] md:translate-y-[15px] translate-x-[-9px] translate-y-[-5px] max-sm:size-5"
                             src="./assets/images/svg/road-down-icon.svg" alt="road-down-icon">
                     </div>
                 </div>
             </div>
     </section>
+
     <!-----section-team-slider--------->
     <section id="team">
         <div class="max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-10">
@@ -705,7 +727,8 @@
             </div>
         </div>
     </section>
-    <!-- FAQS SECTION -->
+
+    <!-- faqs section -->
     <section id="faq">
         <div class="w-full">
             <div class="max-w-[1140px] max-xl:px-4 mx-auto container">
@@ -872,11 +895,14 @@
             </div>
         </div>
     </section>
-    <footer class="pt-8 pb-6 max-sm: py-5">
+    <!-- footer -->
+    <footer class="pt-8 pb-6 max-sm:py-5">
         <p class="text-center leading-100">
             © Hustlin' Hardos <span id="year"></span>
         </p>
     </footer>
+    
+    <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
