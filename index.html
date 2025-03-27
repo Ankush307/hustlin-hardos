@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <style type="text/tailwindcss">
         @theme {
@@ -58,18 +59,102 @@
 </head>
 
 <body>
+    <section class="bg-black py-[13.5px] max-md:py-2.5 max-sm:py-2">
+        <div class="flex overflow-hidden">
+            <div class="top-scroll flex gap-[62px] max-md:gap-14">
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">S&P</p>
+                    <p class="text-red border p-0.5 text-sm rounded-[5px] border-solid border-red"> -1.01%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">Shanghai</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.87%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">FTSE 100</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.13%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">ASD 100</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow"> +0.13%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">Brent Crude Oil</p>
+                    <p class="text-orange border p-0.5 text-sm rounded-[5px] border-solid border-orange">-0.24%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">DSC</p>
+                    <p class="text-orange border p-0.5 text-sm rounded-[5px] border-solid border-orange">-0.24%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">AXD 100</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.13%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">Euro/Doller</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.03%</p>
+                </div>
+                <!-- again -->
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">S&P</p>
+                    <p class="text-red border p-0.5 text-sm rounded-[5px] border-solid border-red">-1.01%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">Shanghai</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow"> +0.87% </p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">FTSE 100</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.13%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">ASD 100</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.13%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">Brent Crude Oil</p>
+                    <p class="text-orange border p-0.5 text-sm rounded-[5px] border-solid border-orange">-0.24%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">DSC</p>
+                    <p class="text-orange border p-0.5 text-sm rounded-[5px] border-solid border-orange"> -0.24%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white whitespace-nowrap">AXD 100</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow"> +0.13%</p>
+                </div>
+                <div class="flex items-center gap-[7px]">
+                    <p class="text-white">Euro/Doller</p>
+                    <p class="text-yellow border p-0.5 text-sm rounded-[5px] border-solid border-yellow">+0.03%</p>
+                </div>
+            </div>
+        </div>
+       
+    </section>
     <!-- hero section -->
     <section class="max-w-[1920px] mx-auto">
-        <div class="bg-black h-[52px]"></div>
         <header class="py-2">
             <div class="container max-xl:px-4 max-w-[1140px] w-full mx-auto">
                 <div class="flex w-full justify-end items-center">
                     <div class="max-w-[658px] w-full">
                         <div class="w-full flex items-center justify-between">
-                            <a href="/">Hustlin' Hardos</a>
+                            <a class="moderfb text-2xl leading-100 font-normal" href="/">Hustlin' Hardos</a>
                             <div id="menu"
-                                class="flex gap-5 transition-all max-sm:z-40 duration-300 items-center max-sm:gap-4 max-sm:fixed max-sm:flex-col max-sm:w-full max-sm:h-full max-sm:justify-center max-sm:items-center max-sm:bg-cream max-sm:top-0 max-sm:left-full">
-                                <div class="flex gap-[18px] max-sm:flex-col max-sm:gap-4 items-center">
+                                class="flex gap-5 transition-all max-sm:z-40 duration-300 items-center max-sm:gap-4 max-sm:fixed max-sm:flex-col max-sm:w-full max-sm:h-1/2 max-sm:justify-center max-sm:items-center max-sm:bg-cream max-sm:left-0 max-sm:-top-full">
+                                <div
+                                    class="max-w-[561px] justify-center items-center flex-col flex mx-auto sm:hidden border-x-2">
+                                    <a class="px-6 border-t-2 whitespace-nowrap w-full text-center py-[7px]"
+                                        href="#about">About us</a>
+                                    <a class="px-6 border-t-2 whitespace-nowrap w-full text-center py-[7px]"
+                                        href="#miting">Minting</a>
+                                    <a class="px-6 border-t-2 whitespace-nowrap w-full text-center py-[7px]"
+                                        href="#roadmap">Roadmap</a>
+                                    <a class="px-6 border-t-2 whitespace-nowrap w-full text-center py-[7px]"
+                                        href="#team">Team</a>
+                                    <a class="px-6 border-y-2 whitespace-nowrap w-full text-center py-[7px]"
+                                        href="#faqs">FAQs</a>
+                                </div>
+                                <div class="flex gap-[18px] max-sm:gap-4 items-center">
                                     <a target="_blank" href="https://www.discord.com/"
                                         class="flex size-6 grop justify-center transition-all duration-300 items-center hover:translate-y-[-5px]">
                                         <img src="./assets/images/svg/discord-logo.svg" alt="discord" />
@@ -111,59 +196,49 @@
             </div>
             <div class="w-full mt-[7px] border-t-2 border-b-2">
                 <div class="max-w-[561px] justify-center items-center flex mx-auto">
-                    <a class="px-6 border-x-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
+                    <a class="px-6 border-x-2 whitespace-nowrap hover:bg-black hover:text-white duration-500 transition-all  max-md:text-sm max-sm:text-xs py-[7px] max-sm:py-1 max-sm:px-2"
                         href="#about">About us</a>
-                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
-                        href="#about">Minting</a>
-                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
-                        href="#about">Roadmap</a>
-                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
-                        href="#about">Team</a>
-                    <a class="px-6 border-r-2 whitespace-nowrap max-md:text-sm max-sm:text-xs border-solid py-[7px] max-sm:py-1 max-sm:px-2 border-black"
-                        href="#about">FAQs</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap hover:bg-black hover:text-white duration-500 transition-all  max-md:text-sm max-sm:text-xs py-[7px] max-sm:py-1 max-sm:px-2"
+                        href="#minting">Minting</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap hover:bg-black hover:text-white duration-500 transition-all  max-md:text-sm max-sm:text-xs py-[7px] max-sm:py-1 max-sm:px-2"
+                        href="#roadmap">Roadmap</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap hover:bg-black hover:text-white duration-500 transition-all  max-md:text-sm max-sm:text-xs py-[7px] max-sm:py-1 max-sm:px-2"
+                        href="#team">Team</a>
+                    <a class="px-6 border-r-2 whitespace-nowrap hover:bg-black hover:text-white duration-500 transition-all  max-md:text-sm max-sm:text-xs py-[7px] max-sm:py-1 max-sm:px-2"
+                        href="#faqs">FAQs</a>
                 </div>
             </div>
         </header>
         <div class="container mx-auto pt-[25px]">
-            <h1 class="lg:text-custom-8xl md:text-6xl text-5xl font-bold text-center moderfb">THE HUSTLIN’ HARDOS.</h1>
+            <h1 class="xl:text-custom-8xl lg:text-9xl md:text-6xl text-5xl font-bold text-center moderfb">THE HUSTLIN’
+                HARDOS.</h1>
         </div>
         <img class="max-md:h-[300px] w-full" src="/assets/images/webp/hero-img.webp" alt="hero img"
             style="object-fit: cover;">
     </section>
-    <!-----------text--------- -->
-    <section>
-        <div class="conatiner max-w-[1140px] mx-auto">
-            <div
-                class="max-w-[1140px] px-4 text-custom-6xl max-[992px]:text-[51px] max-[768px]:text-[42px] max-[575px]:text-[31px] max-[375px]:text-[21px] max-[325px]:text-[18px] font-normal leading-140 pt-[67px] pb-[64px] max-[576px]:pt-[30px] max-[576px]:pb-[30px]">
-                “BREAKING NEWS:
-                Hustlin Hardos set to launch the most anticipated NFT project of
-                2022"</div>
-        </div>
-    </section>
     <!-----blue-cartoon-section-------->
     <section class="border-t-[2px] border-b-[2px]">
+        <div class="max-xl:px-4 border-b-2">
+            <div
+                class="max-w-[1140px] mx-auto xl:text-custom-6xl md:text-5xl sm:text-4xl text-3xl leading-140 lg:py-16 md:py-12 py-8">
+                “BREAKING NEWS: Hustlin Hardos set to launch the most anticipated NFT project of 2022"</div>
+        </div>
         <div class="container max-w-[1140px] mx-auto px-4">
             <div class="flex flex-wrap justify-center border-l-[2px] border-r-[2px]">
                 <div class="w-full lg:w-1/2">
                     <div
-                        class="py-[91px] pl-[43px] pr-[52px] border-r-2 max-[1024px]:border-r-0 max-[576px]:py-[30px] max-[992px]:py-[60px] max-[992px]:pl-[25px]">
+                        class="py-[86px] pl-[43px] h-full pr-6 md:pr-[52px] border-r-2 max-[1024px]:border-r-0 max-[576px]:py-[30px] max-[992px]:py-[60px] max-[992px]:pl-[25px]">
                         <p class="font-normal text-base leading-100 pb-[16px]">March 1, 2022 by
                             Editor Hardo</p>
                         <p
-                            class="font-normal text-lg leading-[120%] max-w-[475px] pb-[16px] max-[1024px]:max-w-[unset] max-md:text-[14px]">
-                            Hustlin' Hardos is a
-                            collection
-                            of 9,999
-                            NFT characters on the
-                            Ethereum Blockchain, inspired by
-                            the business/finance world, hustler culture and web3 aesthetics.
-                            Each Hustlin' Hardo is a completely original and unique combination of hundreds of potential
-                            attributes such as luxury watches, clothing, or accessories - all with provable degrees of
-                            rarity. The collection features truly unique and powerful artwork, while offering its
-                            holders
+                            class="font-normal text-sm md:text-lg leading-150 max-w-[475px] pb-[16px] max-[1024px]:max-w-[unset]">
+                            Hustlin' Hardos is a collection of 9,999 NFT characters on the Ethereum Blockchain, inspired
+                            by the business/finance world, hustler culture and web3 aesthetics. Each Hustlin' Hardo is a
+                            completely original and unique combination of hundreds of potential attributes such as
+                            luxury watches, clothing, or accessories - all with provable degrees of rarity. The
+                            collection features truly unique and powerful artwork, while offering its holders
                             first-of-its-kind utility. Your Huslin’ Hardo NFT is your gateway to The Boardroom, one of
-                            the
-                            most rewarding and engaging online communities
+                            the most rewarding and engaging online communities
                         </p>
                         <a href="#"
                             class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
@@ -171,107 +246,105 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 flex justify-center">
-                    <img class="w-full max-h-[514px] max-[1100px]:max-h-[575px] max-lg:border-t-[2px]" src="./assets/images/webp/blue-outfit-cartoon-img.webp"
-                        alt="blue-outfit-cartoon-img">
+                    <img class="w-full max-h-[572px] lg:min-h-[572px] max-lg:border-t-[2px]"
+                        src="./assets/images/webp/blue-outfit-cartoon-img.webp" alt="blue-outfit-cartoon-img">
                 </div>
             </div>
         </div>
     </section>
     <!-----section-tweets-slider------->
-    <section>
-        <div class="container max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-10 px-4">
-            <div class="flex justify-between max-[576px]:px-3">
-                <p
-                    class="text-custom-7xl leading-104 text-base max-[800px]:text-[64px] max-[675px]:text-[46px] max-[576px]:text-[36px] max-[425px]:text-[26px]">
-                    LATEST TWEETS</p>
-                <div class="flex gap-[55px] justify-center items-center max-[576px]:gap-[26px]">
-                    <img class="cursor-pointer left-arrow max-[576px]:w-[8px]"
-                        src="./assets/images/svg/accordion-left-arrow.svg" alt="accordion-left-arrow">
-                    <img class="cursor-pointer right-arrow max-[576px]:w-[8px]"
-                        src="./assets/images/svg/accordion-right-arrow.svg" alt="accordion-right-arrow">
+    <section id="about">
+        <div class="max-w-[1140px] max-xl:px-4 py-[89.5px] max-lg:py-20 max-md:py-14 max-sm:py-10 mx-auto container">
+            <div class="w-full flex items-center justify-between">
+                <h2
+                    class="text-custom-7xl max-sm:tracking-[-1px] max-lg:text-7xl max-md:text-6xl max-sm:text-4xl uppercase leading-104">
+                    Latest Tweets
+                </h2>
+                <div class="gap-[55px] items-center max-sm:gap-3 flex justify-center">
+                    <button class="cursor-pointer latest-prev">
+                        <img class="max-sm:w-[15px] max-sm:h-[25px]" src="/assets/images/svg/accordion-left-arrow.svg"
+                            alt="SliderArrow" />
+                    </button>
+                    <button class="cursor-pointer latest-next">
+                        <img class="max-sm:w-[15px] max-sm:h-[25px]" src="/assets/images/svg/accordion-right-arrow.svg"
+                            alt="SliderArrow" />
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="w-full border-2">
-            <div class="container max-w-[1144px] mx-auto">
-                <div class="tweet-slider">
-                    <div class="pt-[48px] pb-[46px] max-[375px]:py-[20px] px-[26px] border-l max-w-[385px] w-full">
-                        <p class="m-0 text-4xl font-semibold leading-111 max-[992px]:text-[30px]">Etiam eget</p>
-                        <div class="flex gap-[11px] pt-[13px]">
-                            <img src="./assets/images/svg/slider-twiter-svg.svg" alt="slider-twiter-svg">
-                            <p class="font-normal text-sm leading-100 m-0">23/02/2022</p>
+        <div class="border-y-2 border-solid border-black">
+            <div class="max-w-[1140px] max-xl:px-4 mx-auto">
+                <div class="swiper mySwiper border-l-2">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            <h4 class="font-semibold text-3xl md:text-4xl leading-111">Etiam eget</h4>
+                            <div class="flex gap-[11px] py-3 items-center">
+                                <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
+                                <p class="text-sm">23/02/2022</p>
+                            </div>
+                            <p class="max-sm:text-sm pb-[15px] leading-100">
+                                Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum
+                                porta ultrices quam in.
+                            </p>
+                            <a href="/" class="hover:underline text-sm">Read More...</a>
                         </div>
-                        <p class="m-0 font-normal text-base leading-100 max-w-[327px] mt-[13px] mb-[15px]">Diam tellus
-                            arcu,
-                            amet
-                            ornare nulla ut scelerisque et. Cum porta ultrices quam in.</p>
-                        <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
-                            More...</a>
-                    </div>
-                    <div class="pt-[48px] pb-[46px] max-[375px]:py-[20px] px-[26px] border-l max-w-[385px] w-full">
-                        <p class="m-0 text-4xl font-semibold leading-111 max-[992px]:text-[30px]">Venenatis.</p>
-                        <div class="flex gap-[11px] pt-[13px]">
-                            <img src="./assets/images/svg/slider-twiter-svg.svg" alt="slider-twiter-svg">
-                            <p class="font-normal text-sm leading-100 m-0">22/02/2022</p>
+                        <div
+                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            <h4 class="font-semibold text-3xl md:text-4xl leading-111">Venenatis.</h4>
+                            <div class="flex gap-[11px] py-3 items-center">
+                                <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
+                                <p class="text-sm">22/02/2022</p>
+                            </div>
+                            <p class="max-sm:text-sm pb-[15px] leading-100">
+                                Tortor dolor ultrices mauris aliquam feugiat amet ultrices
+                                facilisi. Venenatis.
+                            </p>
+                            <a href="/" class="hover:underline text-sm">Read More...</a>
                         </div>
-                        <p
-                            class="m-0 font-normal text-base leading-100 max-w-[327px] max-[380px]:max-w-[297px] mt-[13px] mb-[15px]">
-                            Tortor dolor
-                            ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.</p>
-                        <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
-                            More...</a>
-                    </div>
-                    <div class="pt-[48px] pb-[46px] max-[375px]:py-[20px] px-[26px] border-l max-w-[385px] w-full">
-                        <p class="m-0 text-4xl font-semibold leading-111 max-[992px]:text-[30px]">Quis vulputate.</p>
-                        <div class="flex gap-[11px] pt-[13px]">
-                            <img src="./assets/images/svg/slider-twiter-svg.svg" alt="slider-twiter-svg">
-                            <p class="font-normal text-sm leading-100 m-0">22/02/2022</p>
+                        <div
+                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            <h4 class="font-semibold text-3xl md:text-4xl leading-111">
+                                Quis vulputate.
+                            </h4>
+                            <div class="flex gap-[11px] py-3 items-center">
+                                <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
+                                <p class="text-sm">20/02/2022</p>
+                            </div>
+                            <p class="max-sm:text-sm pb-[15px] leading-100">
+                                Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor.
+                                Et tortor vel arcu ac.
+                            </p>
+                            <a href="/" class="hover:underline text-sm">Read More...</a>
                         </div>
-                        <p class="m-0 font-normal text-base leading-100 max-w-[327px] mt-[13px] mb-[15px]">Vestibulum at
-                            gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.</p>
-                        <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
-                            More...</a>
-                    </div>
-                    <div class="pt-[48px] pb-[46px] max-[375px]:py-[20px] px-[26px] border-l max-w-[385px] w-full">
-                        <p class="m-0 text-4xl font-semibold leading-111 max-[992px]:text-[30px]">Etiam eget</p>
-                        <div class="flex gap-[11px] pt-[13px]">
-                            <img src="./assets/images/svg/slider-twiter-svg.svg" alt="slider-twiter-svg">
-                            <p class="font-normal text-sm leading-100 m-0">23/02/2022</p>
+                        <div
+                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            <h4 class="font-semibold text-3xl md:text-4xl leading-111">Venenatis.</h4>
+                            <div class="flex gap-[11px] py-3 items-center">
+                                <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
+                                <p class="text-sm">22/02/2022</p>
+                            </div>
+                            <p class="max-sm:text-sm pb-[15px] leading-100">
+                                Tortor dolor ultrices mauris aliquam feugiat amet ultrices
+                                facilisi. Venenatis.
+                            </p>
+                            <a href="/" class="hover:underline text-sm">Read More...</a>
                         </div>
-                        <p class="m-0 font-normal text-base leading-100 max-w-[327px] mt-[13px] mb-[15px]">Diam tellus
-                            arcu,
-                            amet
-                            ornare nulla ut scelerisque et. Cum porta ultrices quam in.</p>
-                        <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
-                            More...</a>
-                    </div>
-                    <div class="pt-[48px] pb-[46px] max-[375px]:py-[20px] px-[26px] border-l max-w-[385px] w-full">
-                        <p class="m-0 text-4xl font-semibold leading-111 max-[992px]:text-[30px]">Venenatis.</p>
-                        <div class="flex gap-[11px] pt-[13px]">
-                            <img src="./assets/images/svg/slider-twiter-svg.svg" alt="slider-twiter-svg">
-                            <p class="font-normal text-sm leading-100 m-0">22/02/2022</p>
+                        <div
+                            class="swiper-slide px-[25px] h-full border-r-2 border-solid border-black pt-[47px] min-h-[257px]">
+                            <h4 class="font-semibold text-3xl md:text-4xl leading-111">
+                                Quis vulputate.
+                            </h4>
+                            <div class="flex gap-[11px] py-3 items-center">
+                                <img src="./assets/images/svg/slider-twiter-svg.svg" alt="twitter" />
+                                <p class="text-sm">20/02/2022</p>
+                            </div>
+                            <p class="max-sm:text-sm pb-[15px] leading-100">
+                                Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor.
+                                Et tortor vel arcu ac.
+                            </p>
+                            <a href="/" class="hover:underline text-sm">Read More...</a>
                         </div>
-                        <p class="m-0 font-normal text-base leading-100 max-w-[327px] mt-[13px] mb-[15px]">Tortor dolor
-                            ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.</p>
-                        <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
-                            More...</a>
-                    </div>
-                    <div class="pt-[48px] pb-[46px] max-[375px]:py-[20px] px-[26px] border-l max-w-[385px] w-full">
-                        <p class="m-0 text-4xl font-semibold leading-111 max-[992px]:text-[30px]">Quis vulputate.</p>
-                        <div class="flex gap-[11px] pt-[13px]">
-                            <img src="./assets/images/svg/slider-twiter-svg.svg" alt="slider-twiter-svg">
-                            <p class="font-normal text-sm leading-100 m-0">22/02/2022</p>
-                        </div>
-                        <p class="m-0 font-normal text-base leading-100 max-w-[327px] mt-[13px] mb-[15px]">Vestibulum at
-                            gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.</p>
-                        <a href="#"
-                            class="font-normal text-base leading-100 underline cursor-pointer hover:text-red transition-all">Read
-                            More...</a>
                     </div>
                 </div>
             </div>
@@ -368,17 +441,17 @@
             </div>
         </div>
         <div class="max-w-[1140px] mx-auto max-xl:px-4 ">
-            <div class="border-x-2 md:pb-[88px]  md:pt-[128px] pt-20">
-                <div class="flex flex-col grid-cols-9 pl-9 mx-auto md:grid">
+            <div class="border-x-2 py-12 md:py-16 lg:py-[100px] pt-20">
+                <div class="flex flex-col grid-cols-9 md:pl-9 pl-6 lg:pl-0 pr-1 mx-auto md:grid">
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] md:-mt-3 rounded-full top-[0%]">
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[5%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[5%] absolute" />
                                 </div>
                             </div>
                         </div>
@@ -396,7 +469,7 @@
                     </div>
                     <div class="flex md:contents flex-row-reverse justify-left">
                         <div
-                            class="relative md:-mt-28 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5  md:ml-auto">
+                            class="relative md:-mt-28 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5 md:ml-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 2</p>
                             <h3 class="md:text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Community Building</h3>
                             <p class="max-w-[460px] max-md:text-sm">Hustlin’ Hardos can be minted and are revealed to
@@ -405,7 +478,7 @@
                                 this unique collectible item, which will become an integral part of your online identity
                             </p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-28">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-28">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -413,19 +486,19 @@
                             </div>
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
                                 <div class="relative"><img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[5%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[5%] absolute" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] md:-mt-3 rounded-full top-[0%]">
                                 <div class="relative"><img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[0%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[0%] absolute" />
                                 </div>
                             </div>
                         </div>
@@ -453,7 +526,7 @@
                                 virtual foot race against your friend’s hardos. Since those events are free to enter,
                                 you can’t lose anything - but you can win BIG!</p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-24">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-24">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -462,20 +535,20 @@
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[5%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[5%] absolute" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] md:-mt-3 rounded-full top-[0%]">
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[0%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[0%] absolute" />
                                 </div>
                             </div>
                         </div>
@@ -504,7 +577,7 @@
                                 3D
                                 avatar in the metaverse</p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -513,20 +586,20 @@
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[5%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[5%] absolute" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex md:contents">
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div class="w-1 h-full bg-black"></div>
                             </div>
                             <div class="absolute size-[59px] left-[-29px] md:-mt-3 rounded-full top-[0%]">
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[0%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[0%] absolute" />
                                 </div>
                             </div>
                         </div>
@@ -543,7 +616,7 @@
                     </div>
                     <div class="flex md:contents flex-row-reverse justify-left">
                         <div
-                            class="relative md:-mt-3 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5  md:ml-auto">
+                            class="relative md:-mt-3 max-[1140px]:mb-6 text-gray-800 rounded-xl col-start-1 col-end-5 md:pl-9  md:ml-auto">
                             <p class="text-sm leading-100 pb-2.5">Phase 8</p>
                             <h3 class="md:text-lg font-semibold lg:text-4xl leading-[120%] pb-3">Swapping Individual
                                 Attributes
@@ -551,7 +624,7 @@
                             <p class="max-w-[460px] max-md:text-sm">Building a wardrobe app where you can secondary
                                 sales</p>
                         </div>
-                        <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
                             <div class="flex items-center justify-center w-0.5 h-full">
                                 <div
                                     class="w-1 translate-y-[10px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
@@ -560,32 +633,20 @@
                             <div class="absolute size-[59px] left-[-29px] rounded-full top-[0%]">
                                 <div class="relative">
                                     <img src="./assets/images/svg/roadmap-sign.svg" alt="roadmap"
-                                        class="top-[5%] absolute" />
+                                        class="max-md:size-10 max-md:left-2.5 top-[5%] absolute" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
+                    <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
                         <div class="flex items-center justify-center w-0.5 h-36">
                             <div class="w-1 translate-y-[20px] h-full bg-black max-md:translate-y-2.5 rounded-t-full">
                             </div>
                         </div>
                     </div>
-                    <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
-                        <div
-                            class="flex items-center justify-center w-0.5 h-5 md:rotate-45 origin-bottom max-md:translate-y-[-10px] rotate-[45deg]">
-                            <div
-                                class="w-1 md:translate-y-[7px] translate-x-[-1px] md:translate-x-[8px] h-full bg-black rounded-full">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto md:-mt-3">
-                        <div
-                            class="flex items-center justify-center max-md:translate-y-[-35px] w-0.5 h-5 md:-rotate-45 rotate-[-45deg]">
-                            <div
-                                class="w-1 md:translate-y-[1px] translate-x-[-10px] md:translate-x-[-9px] h-full bg-black rounded-full">
-                            </div>
-                        </div>
+                    <div class="relative col-start-5 col-end-6 mr-7 md:mr-10 md:mx-auto md:-mt-3">
+                        <img class="md:translate-x-[13.5px] md:translate-y-[15px] translate-x-[-9px] translate-y-[-5px] max-sm:size-5"
+                            src="./assets/images/svg/road-down-icon.svg" alt="road-down-icon">
                     </div>
                 </div>
             </div>
@@ -595,45 +656,47 @@
         <div class="container max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-10">
             <div class="flex justify-between max-xl:px-4">
                 <p class="lg:text-custom-7xl md:text-7xl sm:text-5xl text-4xl leading-104">Team</p>
-                <div class="flex gap-[55px] justify-center items-center max-[576px]:gap-[26px]">
-                    <img class="cursor-pointer team-left-arrow max-[576px]:w-[10px]"
+                <div class="flex gap-[55px] justify-center items-center max-sm:gap-3">
+                    <img class="cursor-pointer team-left-arrow max-sm:w-[15px] max-sm:h-[25px]"
                         src="./assets/images/svg/accordion-left-arrow.svg" alt="accordion-left-arrow">
-                    <img class="cursor-pointer team-right-arrow max-[576px]:w-[10px]"
+                    <img class="cursor-pointer team-right-arrow max-sm:w-[15px] max-sm:h-[25px]"
                         src="./assets/images/svg/accordion-right-arrow.svg" alt="accordion-right-arrow">
                 </div>
             </div>
         </div>
         <div class="w-full border-y-2">
-            <div class="container max-w-[1140px] mx-auto border-r border-l">
-                <div class="team-slider">
+            <div class="container max-w-[1138px] mx-auto max-xl:px-4">
+                <div class="team-slider border-x">
                     <div
-                        class="max-w-[568px] px-4 slider-bg max-lg:!min-h-[370px] !flex flex-col pt-[56.6px] lg:py-[56.6px] border-x-2 border-transparent">
+                        class="max-w-[568px] px-4 slider-bg max-lg:!min-h-[370px] max-md:!min-h-[317px]  lg:!min-h-[346px] !flex flex-col pt-8 md:pt-[56.6px] border-x">
                         <img class="flex mx-auto" src="./assets/images/webp/team-slider-profile-img.webp"
                             alt="team-slider-profile-img">
-                        <p class="m-0 font-black text-4xl text-brown text-center pt-[16px]">Executive Hardo </p>
+                        <p class="m-0 font-black text-3xl md:text-4xl text-brown text-center pt-[16px]">Executive Hardo
+                        </p>
                         <p class="max-w-[407px] text-center mx-auto font-normal text-base pt-[16px]">Crypto
                             startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant, </p>
                     </div>
-                    <div class="max-w-[568px] px-4 slider-bg py-[56.6px] border-x-2 border-">
+                    <div class="max-w-[568px] px-4 slider-bg py-8 md:py-[56.6px] border-x">
                         <img class="flex mx-auto" src="./assets/images/webp/team-slider-brown-profile-img.webp"
                             alt="team-slider-profile-img">
-                        <p class="m-0 font-black text-4xl text-gray text-center pt-[16px]">Johnny Banjo </p>
+                        <p class="m-0 font-black text-3xl md:text-4xl text-gray text-center pt-[16px]">Johnny Banjo </p>
                         <p class="max-w-[407px] text-center mx-auto font-normal text-base pt-[16px]">The
                             Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is
                             simply dummy text of the printing industry.</p>
                     </div>
                     <div
-                        class="max-w-[568px] px-4 slider-bg max-lg:!min-h-[370px] !flex flex-col pt-[56.6px] lg:py-[56.6px] border-x-2 border-transparent">
+                        class="max-w-[568px] px-4 slider-bg max-lg:!min-h-[370px] max-md:!min-h-[317px] !flex flex-col pt-8 md:pt-[56.6px] lg:!min-h-[346px] border-x">
                         <img class="flex mx-auto" src="./assets/images/webp/team-slider-profile-img.webp"
                             alt="team-slider-profile-img">
-                        <p class="m-0 font-black text-4xl text-brown text-center pt-[16px]">Executive Hardo </p>
+                        <p class="m-0 font-black text-3xl md:text-4xl text-brown text-center pt-[16px]">Executive Hardo
+                        </p>
                         <p class="max-w-[407px] text-center mx-auto font-normal text-base pt-[16px]">Crypto
                             startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant, </p>
                     </div>
-                    <div class="max-w-[568px] px-4 slider-bg py-[56.6px] border-x-2 border-">
+                    <div class="max-w-[568px] px-4 slider-bg py-8 md:py-[56.6px] border-x">
                         <img class="flex mx-auto" src="./assets/images/webp/team-slider-brown-profile-img.webp"
                             alt="team-slider-profile-img">
-                        <p class="m-0 font-black text-4xl text-gray text-center pt-[16px]">Johnny Banjo </p>
+                        <p class="m-0 font-black text-3xl md:text-4xl text-gray text-center pt-[16px]">Johnny Banjo </p>
                         <p class="max-w-[407px] text-center mx-auto font-normal text-base pt-[16px]">The
                             Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is
                             simply dummy text of the printing industry.</p>
@@ -646,9 +709,8 @@
     <section id="faq">
         <div class="w-full">
             <div class="max-w-[1140px] max-xl:px-4 mx-auto container">
-                <div
-                    class="max-w-[1140px] max-xl:px-4 lg:py-[88px] md:py-16 py-10 mx-auto container">
-                     <h2 class="text-custom-7xl max-lg:text-7xl max-md:text-6xl max-sm:text-4xl uppercase leading-104">
+                <div class="max-w-[1140px] max-xl:px-4 lg:py-[88px] md:py-16 py-10 mx-auto container">
+                    <h2 class="text-custom-7xl max-lg:text-7xl max-md:text-6xl max-sm:text-4xl uppercase leading-104">
                         Faqs</h2>
                 </div>
             </div>
@@ -659,15 +721,15 @@
                     <div class="w-full">
                         <!-- items 1 -->
                         <div
-                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer font-semibold items-center text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer font-semibold items-center text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>What is an NFT?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -681,15 +743,15 @@
 
                         <!-- items 2 -->
                         <div
-                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>How do I get an NFT?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -703,15 +765,15 @@
 
                         <!-- items 3 -->
                         <div
-                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>How much is a Hustlin' Hardo NFT?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -725,15 +787,15 @@
 
                         <!-- items 4 -->
                         <div
-                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>Where can I mint a Hustlin' Hardos NFT?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -747,15 +809,15 @@
 
                         <!-- items 5 -->
                         <div
-                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>How do I mint a Hustlin' Hardo NFT?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -769,15 +831,15 @@
 
                         <!-- items 6 -->
                         <div
-                            class="border-b-2 border-black pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="border-b-2 border-black pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>How many Hustlin' Hardos NFTs will there be?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -791,16 +853,16 @@
 
                         <!-- items 7 -->
                         <div
-                            class="pl-[15px] pr-[15px] pt-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pt-6 sm:pb-[20px] md:pt-8 md:pb-[27px] md:pr-[44px]">
+                            class="pl-[15px] pr-[15px] pb-[15px] sm:pl-[30px] sm:pr-[30px] sm:pb-[20px] md:pb-[27px] md:pr-[44px]">
                             <button onclick="toggleAccordion(this)"
-                                class="w-full flex justify-between cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
+                                class="w-full flex justify-between md:pt-8 pt-6 pb-4 cursor-pointer items-center font-semibold text-start spacing-100 text-black text-lg md:text-xl sm:text-2xl accordin-button">
                                 <span>What is the utility and functionality of a Hustlin' Hardo
                                     NFT?</span>
                                 <span
-                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:opacity-0 after:rotate-90 after:transition-all after:duration-300"></span>
+                                    class="w-3.5 h-0.5 bg-black relative after:absolute after:w-full after:h-full after:bg-black/100 after:rotate-90 after:transition-all after:duration-300"></span>
                             </button>
                             <p
-                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px] pt-4">
+                                class="max-h-0 text-sm md:text-base spacing-150 overflow-hidden transition-all duration-300 accordin-data max-w-[992px]">
                                 NFT stands for “Non-fungible token,” which means that it’s a
                                 unique, digital item with blockchain-managed ownership that
                                 users can buy, own, and trade. Some NFT’s fundamental function
@@ -821,6 +883,7 @@
             © Hustlin' Hardos <span id="year"></span>
         </p>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -828,6 +891,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
