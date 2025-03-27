@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: ff-moderfb;
-    src: url(/assets/fonts/modernofbcomp-bold.otf);
+    src: url('/assets/fonts/modernofbcomp-bold.otf');
 }
 
 * {

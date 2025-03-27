@@ -39,10 +39,7 @@ document.querySelectorAll('.accordion-item').forEach(item => {
 
 function toggleAccordion(button) {
     const allAccordions = document.querySelectorAll(".accordin-data");
-    const allIcons = document.querySelectorAll(
-        ".accordin-button span:last-child"
-    );
-
+    const allIcons = document.querySelectorAll(".accordin-button span:last-child");
     const paragraph = button.nextElementSibling;
     const icon = button.querySelector("span:last-child");
 
