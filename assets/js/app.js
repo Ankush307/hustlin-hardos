@@ -6,6 +6,15 @@ const handelClick = () => {
     document.getElementById("nav-line-2").classList.toggle("rotate-45");
     document.getElementById("nav-line-3").classList.toggle("-translate-x-10");
 };
+// handle close is use for close menu
+const handelClose = () => {
+    document.body.classList.remove("overflow-hidden");
+    document.getElementById("menu").classList.remove("max-sm:!top-0");
+    document.getElementById("nav-line-1").classList.remove("translate-x-10");
+    document.getElementById("nav-line-2").classList.remove("after:rotate-90");
+    document.getElementById("nav-line-2").classList.remove("rotate-45");
+    document.getElementById("nav-line-3").classList.remove("-translate-x-10");
+}
 
 // count down
 const counter = document.querySelector('.counter');
@@ -93,7 +102,7 @@ $('.team-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
-    // autoplay: true,
+    autoplay: true,
     prevArrow: '.team-left-arrow',
     nextArrow: '.team-right-arrow',
     responsive: [

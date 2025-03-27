@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: moderfb;
+    font-family: ff-moderfb;
     src: url(/assets/fonts/modernofbcomp-bold.otf);
 }
 
 * {
     font-family: "Noto Serif", serif;
+    scroll-behavior: smooth;
 }
 
-.moderfb {
-    font-family: moderfb;
+.ff-moderfb {
+    font-family: ff-moderfb;
 }
 
 body {
@@ -18,15 +19,11 @@ body {
 }
 
 .slider-bg {
-    background-image: url(../images/png/team-slider-bg.png);
+    background-image: url('../images/png/team-slider-bg.png');
 }
 
 button {
     cursor: pointer;
-}
-
-.justify-left {
-    justify-content: left;
 }
 
 .top-scroll {
