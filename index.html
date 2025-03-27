@@ -190,7 +190,7 @@
                                         <img src="./assets/images/svg/ship-logo.svg" alt="ship" />
                                     </a>
                                 </div>
-                                <button
+                                <button onclick="handelClose()"
                                     class="py-2.5 px-3.5 duration-300 uppercase text-sm cursor-pointer font-semibold border-2 border-black bg-yellow text-black hover:bg-black hover:text-yellow">
                                     Connect Wallet
                                 </button>
@@ -231,7 +231,7 @@
             alt="hero img">
     </section>
 
-    <!-----blue-cartoon-section-------->
+    <!-- blue cartoon section -->
     <section class="border-y-2">
         <div class="max-xl:px-4 border-b-2">
             <div
@@ -267,7 +267,7 @@
         </div>
     </section>
 
-    <!-----section-tweets-slider------->
+    <!-- section tweets slider -->
     <section id="about">
         <div class="max-w-[1140px] max-xl:px-4 py-[89.5px] max-lg:py-20 max-md:py-14 max-sm:py-10 mx-auto">
             <div class="w-full flex items-center justify-between">
@@ -401,8 +401,8 @@
                     <p class="text-green md:text-lg font-semibold leading-100 pt-6 md:pt-9">Time Left</p>
                     <p class="md:text-4xl text-3xl font-semibold leading-100 text-red counter">00:00:00</p>
                 </div>
-                <div class="lg:w-1/2 w-full border-x-2 lg:border-r-2 max-lg:border-t-2 object-cover">
-                    <img class="w-full max-h-[575px]" src="assets/images/webp/sad-men-img.webp" alt="men img">
+                <div class="lg:w-1/2 w-full border-x-2 lg:border-r-2 max-lg:border-t-2">
+                    <img class="w-full max-h-[575px] object-cover" src="assets/images/webp/sad-men-img.webp" alt="men img">
                 </div>
             </div>
         </div>
@@ -673,7 +673,7 @@
             </div>
     </section>
 
-    <!-----section-team-slider--------->
+    <!-- section team slider -->
     <section id="team">
         <div class="max-w-[1140px] mx-auto lg:py-[88px] md:py-16 py-10">
             <div class="flex justify-between max-xl:px-4">
@@ -729,9 +729,9 @@
     </section>
 
     <!-- faqs section -->
-    <section id="faq">
+    <section id="faqs">
         <div class="w-full">
-            <div class="max-w-[1140px] max-xl:px-4 mx-auto container">
+            <div class="max-w-[1140px] mx-auto container">
                 <div class="max-w-[1140px] max-xl:px-4 lg:py-[88px] md:py-16 py-10 mx-auto container">
                     <h2 class="lg:text-custom-7xl md:text-6xl text-4xl uppercase leading-104">
                         Faqs</h2>
@@ -895,19 +895,20 @@
             </div>
         </div>
     </section>
+
     <!-- footer -->
     <footer class="pt-8 pb-6 max-sm:py-5">
         <p class="text-center leading-100">
             © Hustlin' Hardos <span id="year"></span>
         </p>
     </footer>
-    
+
     <!-- back to top -->
     <button id="back-to-top"
         class="fixed sm:bottom-8 sm:right-8 right-3 bottom-3 bg-black text-white md:size-14 size-10 animate-bounce text-xl font-bold z-10 rounded-full shadow-lg hidden hover:scale-105 transition-all duration-300">↑
     </button>
 
-    <!-- scripts -->
+    <!-- slider scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -915,6 +916,8 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js  -->
     <script src="./assets/js/app.js"></script>
 </body>
 
