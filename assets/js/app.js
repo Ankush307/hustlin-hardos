@@ -138,3 +138,19 @@ incrementButton.addEventListener("click", () => {
 // copy right year
 const currentYear = new Date().getFullYear();
 document.getElementById("year").textContent = currentYear;
+
+// back to top
+const backToTopButton = document.getElementById("back-to-top");
+window.onscroll = function () {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        backToTopButton.classList.remove("hidden");
+    } else {
+        backToTopButton.classList.add("hidden");
+    }
+};
+backToTopButton.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
